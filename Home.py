@@ -1,10 +1,8 @@
 import streamlit as st 
 import pandas as pd 
-from streamlit_lottie import st_lottie
 st.set_page_config('Learnscience',layout='wide')
 st.title('Metodología de la investigación 1') 
 st.subheader('Docentes responsables')
-st_lottie("https://assets5.lottiefiles.com/packages/lf20_V9t630.json",width=200)
 
 col1, col2=st.columns(2)
 with col1:
