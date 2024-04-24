@@ -7,8 +7,8 @@
           "credit": ""
         },
         "text": {
-          "headline": "Welcome to<br>Streamlit Timeline",
-          "text": "<p>A Streamlit Timeline component by integrating TimelineJS from Knightlab</p>"
+          "headline": "Historia de la ciencia",
+          "text": "<p>Una historía de al menos 4000 años</p>"
         }
     },
     "events": [
@@ -18,11 +18,11 @@
           "caption": "How to Use TimelineJS (<a target=\"_blank\" href='https://timeline.knightlab.com/'>credits</a>)"
         },
         "start_date": {
-          "year": "2016",
+          "year": "-2016",
           "month":"1"
         },
         "text": {
-          "headline": "TimelineJS<br>Easy-to-make, beautiful timelines.",
+          "headline": "¿El inicio de la ciencia en Babilonia?.",
           "text": "<p>TimelineJS is a populair tool from Knightlab. It has been used by more than 250,000 people to tell stories seen hundreds of millions of times, and is available in more than sixty languages. </p>"
         }
       },
