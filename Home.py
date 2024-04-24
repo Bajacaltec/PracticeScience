@@ -1,6 +1,7 @@
 import streamlit as st 
 import pandas as pd 
 from streamlit_lottie import st_lottie
+from streamlit_timeline import st_timeline
 
 st_lottie("https://app.lottiefiles.com/animation/59d689e1-ca40-42d2-9389-47334eb09fa0?channel=web&source=public-animation&panel=embed")
 
