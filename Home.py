@@ -8,17 +8,36 @@ import openpyxl
 
 #st_lottie("https://lottie.host/7821495d-4a43-4f88-8eaf-b7b3f1a97a6e/RRYQvDBKOw.json")
 
+col1, col2,col3=st.columns([3,1,3])
 
-st.title('Metodología de la investigación 1') 
-st.subheader('Docente responsable')
-
-col1, col2=st.columns(2)
 with col1:
-    st.image('Imagenes/fernandopic.PNG','Cirujano General egresado del Hospital siglo XXI, México, Maestro en ciencias de la vida por parte del CICESE y aspirante a Dr. med por la universidad de Oldenburg, Alemanía',200)
-with col2:
-    st.image('Imagenes/fernandopic.PNG','Dr. Edgar Santos Marcial, Neurocirujano por la universidad de Heidelberg, Maestría en ciencias por, Dr. Med',200)
+    st.title('Metodología de la investigación 1') 
 
+with col3:
+    st.image('Imagenes/fernandopic.PNG',width=120)
+    st.markdown('Dr. Fernando A. Núñez Moreno')
+    st.caption('Docente responsable')
+    st.image('/Users/alonso/Documents/projects-code/PracticeScience/Imagenes/paper.png')
+    st.markdown('------')
+    st.video('https://www.youtube.com/watch?v=DfDImABW3is')
+    
+with col1:
+    st.subheader('Médico general')
+    st.caption('Graduación por examen profresional')
+    st.caption('CEUX, Tijuana Baja California, México')
+    st.subheader('Especialidad en cirugía general')
+    st.caption('Tesis publicada: Acute Cholecystitis Complicating Cardiac Disease: A Cohort Study From a Tertiary Care Center in Mexico City, Mexico')
+    st.markdown('https://pubmed.ncbi.nlm.nih.gov/38465030/')
+    st.caption('Centro Médico Nacional Siglo XXI, Ciudad de México')
+    st.subheader('Maestría en ciencias de la vida con terminal en microbiología')
+    st.caption('Análisis funcional de la miosina de clase II en la organización apical en el hongo filamentoso Neurospora crassa')
+    st.markdown('http://cicese.repositorioinstitucional.mx/jspui/handle/1007/662')
+    st.caption('CICESE, Ensenada, Baja California, México')
+    st.subheader('Candidato a Dr. Med')
+    st.caption('Tesis en curso, nombre provisional: Aplicación del analisis de imagenes multiespectrales en cirugía de columna de lo experimental a la clínica')
+    st.caption('Oldenburg Universität, Alemania')
 
+st.markdown('____')
 st. subheader('Forma de trabajo y calificación')
 st.markdown('La dinámica será basada en la presentación de clase y tema visto en capsulas de 25 minutos, con descansos de 5 minutos.')
 st.error('Al inicio de la clase se realizará un miniexamen con preguntas aleatorizadas de todos los temas vistos en clases, estos son acumulables por lo que se recomienda repasar todo el material antes de empezar las clases')
@@ -30,8 +49,8 @@ calif_df=pd.DataFrame({'col1':[1],'col3':[4]},index=['Nombre'])
 df_excel=pd.read_excel('Calificación df.xlsx')
 st.dataframe(df_excel)
 st.table(calif_df)
+st.toggle('sfd')
 
-import psycopg2
 
 # Parámetros de conexión a la base de datos
 dbname = 'bajacaltec_ciencia'
