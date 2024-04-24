@@ -6,7 +6,6 @@ from streamlit_lottie import st_lottie
 st_lottie("https://lottie.host/7821495d-4a43-4f88-8eaf-b7b3f1a97a6e/RRYQvDBKOw.json")
 
 
-st.set_page_config('Learnscience',layout='wide')
 st.title('Metodología de la investigación 1') 
 st.subheader('Docentes responsables')
 
