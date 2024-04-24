@@ -14,7 +14,7 @@
     "events": [
       {
         "media": {
-          "url": "https://github.com/Bajacaltec/PracticeScience/blob/main/Imagenes/fernandopic.PNG",
+          "url": "https://github.com/Bajacaltec/PracticeScience/blob/main/Imagenes/fernandopic.PNG?raw=true",
           "caption": "How to Use TimelineJS (<a target=\"_blank\" href='https://timeline.knightlab.com/'>credits</a>)"
         },
         "start_date": {
@@ -43,7 +43,7 @@
       },
       {
         "media": {
-          "url": "https://github.com/innerdoc/streamlit-timeline/raw/main/component-logo.png",
+          "url": "https://github.com/Bajacaltec/PracticeScience/blob/main/Imagenes/paper.png?raw=true",
           "caption": "github/innerdoc (<a target=\"_blank\" href='https://www.github.com/innerdoc/'>credits</a>)"
         },
         "start_date": {
