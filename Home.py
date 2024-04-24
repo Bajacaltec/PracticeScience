@@ -55,3 +55,28 @@ finally:
     if conn:
         cursor.close()
         conn.close()
+
+def insert_data(nombre, edad):
+    try:
+        conn = psycopg2.connect(dbname=dbname, user=user, password=password, host=host)
+        cursor = conn.cursor()
+        insert_query = "INSERT INTO db (nombre, edad) VALUES (%s, %s)"
+        cursor.execute(insert_query, (nombre, edad))
+        conn.commit()
+        st.success("Datos insertados correctamente en la tabla.")
+    except psycopg2.Error as e:
+        st.error(f"Error al insertar datos en la tabla: {e}")
+    finally:
+        if conn:
+            cursor.close()
+            conn.close()
+
+# Crear un formulario para ingresar datos
+st.title("Formulario para ingresar datos")
+nombre = st.text_input("Nombre:")
+edad = st.number_input("Edad:")
+if st.button("Guardar"):
+    if nombre and edad:
+        insert_data(nombre, edad)
+    else:
+        st.warning("Por favor ingresa el nombre y la edad.")
