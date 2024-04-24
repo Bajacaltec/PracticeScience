@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd 
 from streamlit_lottie import st_lottie
 
-st_lottie("https://assets5.lottiefiles.com/packages/lf20_V9t630.json")
+st_lottie("https://app.lottiefiles.com/animation/59d689e1-ca40-42d2-9389-47334eb09fa0?channel=web&source=public-animation&panel=embed")
 
 
 st.set_page_config('Learnscience',layout='wide')
