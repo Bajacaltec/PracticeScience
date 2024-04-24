@@ -1,6 +1,7 @@
 import streamlit as st 
 import pandas as pd 
 import psycopg2
+import openpyxl
 
 #from streamlit_lottie import st_lottie
 
@@ -25,6 +26,11 @@ st.error('Al inicio de la clase se realizará un miniexamen con preguntas aleato
 with st.expander('Datos en los que se basa la forma de trabajo'):
     st.text('En que se basa esta metodología')
 
+calif_df=pd.DataFrame({'col1':[1],'col3':[4]},index=['Nombre'])
+df_excel=pd.read_excel('Calificación df.xlsx')
+st.dataframe(df_excel)
+st.table(calif_df)
+
 import psycopg2
 
 # Parámetros de conexión a la base de datos
@@ -35,7 +41,7 @@ host = 'dpg-cokdc7gl5elc73c3klp0-a.oregon-postgres.render.com'
 
 # Definir la sentencia SQL para crear la tabla
 create_table_query = '''
-CREATE TABLE db (
+CREATE TABLE IF NOT EXISTS db (
     id SERIAL PRIMARY KEY,
     nombre VARCHAR(100),
     edad INT
