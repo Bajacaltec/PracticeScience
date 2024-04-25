@@ -1,9 +1,20 @@
 import streamlit as st
+st.set_page_config(page_title="Timeline Example", layout="wide")
+
+st.title('Historia de la ciencia')
+st.subheader('Como llegamos al método científico')
 
 from streamlit_timeline import timeline
+import streamlit as st
 
+col1,col2=st.columns([3,1])
+with col1:
+    st.write('El origen de la ciencia es dificil de precisar ya que la evidencia de pensamientos precientíficos como las matemáticasse encuentran en diversos lugares.')
+    st.info('Esto se puede considerar como evidencia para la captura de datos como transacciones, pero la importancia radica en la capacidad de guardar información')
 
-# use full page width
+with col2:
+    st.image('Imagenes/huesos.png','Marcas en un hueso de mandril encontrados en  Uganda, catalogados con una antiguedad de 20,000-18,000 años antes de cristo',width=150)
+
 
 # load data
 with open('example.json', "r") as f:
@@ -13,12 +24,7 @@ with open('example.json', "r") as f:
 timeline(data, height=800)
 st.title('Historía de la investigación')
 
-st.subheader('Participación 1')
-st.info('Cual consideras que es el inicio de la ciencia')
-col1,col2=st.columns(2)
+
+col1,col2=st.columns([3,1])
 with col1:
-    st.number_input('Primer participación',0)
-    st.number_input('Segunda participación',0)
-with col2:
-    st.number_input('3er participación',0)
-    st.number_input('4ta participación',0)
+    st.subheader('Babilonios')
