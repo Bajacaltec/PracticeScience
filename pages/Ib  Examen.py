@@ -4,7 +4,8 @@ import psycopg2
 st.subheader('Examen 1')
 st.caption('La historia de la ciencia, 4000 años')
 
-clave=st.number_input('Introduce la clave del examen')
+clave=st.sidebar.number_input('Introduce la clave del examen',step=1)
+
 
 if clave==123:
 
@@ -60,3 +61,5 @@ if clave==123:
             insert_data(nombre, edad)
         else:
             st.warning("Por favor ingresa el nombre y la edad.")
+else:
+    st.error('El examen se encuentra cerrado')

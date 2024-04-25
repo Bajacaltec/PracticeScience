@@ -5,12 +5,14 @@ import openpyxl
 st.set_page_config(page_title="Timeline Example", layout="wide")
 
 
+
+
 #from streamlit_lottie import st_lottie
 
 
 #st_lottie("https://lottie.host/7821495d-4a43-4f88-8eaf-b7b3f1a97a6e/RRYQvDBKOw.json")
 
-col1, col2,col3=st.columns([5,1,2])
+col1, col3=st.columns([5,1])
 
 with col1:
     st.title('Metodología de la investigación I') 
