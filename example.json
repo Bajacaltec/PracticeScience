@@ -14,8 +14,8 @@
     "events": [
       {
         "media": {
-          "url": "Imagenes/huesos.png",
-          "caption": "How to Use TimelineJS (<a target=\"_blank\" href='https://timeline.knightlab.com/'>credits</a>)"
+          "url": "https://github.com/Bajacaltec/PracticeScience/blob/main/Imagenes/huesos.png?raw=true",
+          "caption": "Marcas en un hueso de mandril encontrados en Uganda, catalogados con una antiguedad de 20,000-18,000 años antes de cristo (<a target=\"_blank\" href='https://timeline.knightlab.com/'/a>)"
         },
         "start_date": {
           "year": "-2016",
