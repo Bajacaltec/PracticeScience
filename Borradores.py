@@ -94,3 +94,25 @@ if clave==123:
             st.warning("Por favor ingresa el nombre y la edad.")
 else:
     st.error('El examen se encuentra cerrado')
+
+
+import streamlit.components.v1 as components
+
+components.iframe("https://docs.google.com/presentation/d/e/2PACX-1vSe3Fg2NFEl6VES9qmoS4vnmgEp7GTjCYrSH22k9m1afpOcgF2hWv6LKe25I8vQYZq6aRQP3xkQMnSP/embed?start=true&loop=false&delayms=5000",height=540)
+
+#iframe
+    # load data
+    with open('example.json', "r") as f:
+        data = f.read()
+
+    # render timeline
+    timeline(data, height=800)
+
+#st.markdown cambiar texto:
+st.markdown('''
+    :red[Streamlit] :orange[can] :''')
+    texto=texto_html = """
+<div style='color: red; font-size: 32px; font-family: Arial,font-weight: bold, sans-serif; text-align: right; transition: transform 0.3s ease-in-out;'>
+    Hover over me!
+</div>
+"""
